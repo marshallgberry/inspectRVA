@@ -1,12 +1,53 @@
-.navbar-brand {
-    color: white;
-  }
-
   a {
-    color: white;
+    color: #333;
     font-weight: 500;
+    font-size: 25px
   }
 
-  nav {
-    background-color: #333;
+ 
+  .navbar {
+    background:#abd0d6;
+    width: 100%;
+    overflow: auto;
+  }
+
+
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+ 
+  .nav-link {
+    height: 20vh;
+    
+  }
+
+  .homeIcon {
+    background-image: url(../assets/images/homeIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+
+  .aboutIcon {
+    background-image: url(../assets/images/aboutIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+
+  .serviceIcon {
+    background-image: url(../assets/images/serviceIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+  }
+  
+  .profileIcon {
+    background-image: url(../assets/images/profileIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
   }

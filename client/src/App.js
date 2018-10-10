@@ -4,7 +4,7 @@ import './App.css';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Services from './pages/Services.jsx';
-import Book from './pages/Book.jsx'
+import Profile from './pages/Profile.jsx'
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/services" component={Services}/>
-          <Route path="/bookappointment" component={Book}/>
+          <Route path="/profile" component={Profile}/>
         </div>
       </Router>
     );

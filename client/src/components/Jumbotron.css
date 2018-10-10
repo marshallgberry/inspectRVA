@@ -9,10 +9,12 @@
 
   .lead {
      font-size: 32px;
-     margin-left: 11%;
+     font-weight: 350;
+     margin-left: 8%;
   }
 
   .display-3 {
       font-size: 100px;
       font-weight: 600;
+      margin-left: -4%
   }
