@@ -1,7 +1,18 @@
 .jumbotron {
-    background-image: url(../images/home.jpg);
-    background-position: center;
+    background-image: url(../assets/images/home.jpg);
+    height: 335px;
+    background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: 100%;
     color: white;
+  }
+
+  .lead {
+     font-size: 32px;
+     margin-left: 11%;
+  }
+
+  .display-3 {
+      font-size: 100px;
+      font-weight: 600;
   }
