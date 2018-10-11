@@ -11,17 +11,10 @@
     overflow: auto;
   }
 
-
-  @media screen and (max-width: 500px) {
-    .navbar a {
-      float: none;
-      display: block;
-    }
-  }
  
   .nav-link {
-    height: 20vh;
-    
+    height: 28vh;
+    width: 100%;
   }
 
   .homeIcon {
@@ -51,3 +44,5 @@
     background-position: center;
     background-size: 40%;
   }
+
+  

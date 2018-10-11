@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <div className="container">
-          <span className="text-muted">My Website &#169; {new Date().getFullYear()}</span>
+          <span className="text-muted">Copyright 2018 lubeRVA | All Rights Reserved | Handcrafted by MGB &#169; {new Date().getFullYear()}</span>
         </div>
       </footer>
     );

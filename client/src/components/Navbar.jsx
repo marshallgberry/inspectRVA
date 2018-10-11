@@ -9,16 +9,16 @@ class Navbar extends Component {
       <nav className="navbar">
         <div className="navbar">
           <div className="row">
-            <div className="col col">
-              <Link className="nav-link active homeIcon" to="/"></Link>
+            <div className="col ">
+              <Link className="nav-link homeIcon" to="/"></Link>
             </div>
-            <div className="col col">
+            <div className="col ">
               <Link className="nav-link aboutIcon" to="/about"></Link>
             </div>
-            <div className="col col">
+            <div className="col ">
               <Link className="nav-link serviceIcon" to="/services"></Link>
             </div>
-            <div className="col col">
+            <div className="col ">
               <Link className="nav-link profileIcon" to="/profile"></Link>
             </div>
           </div>

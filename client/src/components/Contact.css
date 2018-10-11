@@ -1,0 +1,14 @@
+
+ .phoneIcon {
+    background-image: url(../assets/images/phoneIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+  }
+
+  .emailIcon {
+    background-image: url(../assets/images/emailIcon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+  }
