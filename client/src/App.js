@@ -5,6 +5,7 @@ import Home from './pages/Home/Home.jsx';
 import About from './pages/About/About.jsx';
 import Services from './pages/Services/Services.jsx';
 import Profile from './pages/Profile/Profile.jsx'
+import Login from './pages/Login/Login.jsx';
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Route path="/about" component={About}/>
           <Route path="/services" component={Services}/>
           <Route path="/profile" component={Profile}/>
+          <Route path="/login" component={Login}/>
         </div>
       </Router>
     );
