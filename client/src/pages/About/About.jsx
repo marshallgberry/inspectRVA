@@ -11,7 +11,6 @@ class About extends Component {
         <Navbar />
         <div className="aboutBody">
           <div className="card aboutCard">
-            <div className="card-body">
                <div className="aboutText">
                   <h1 className="aboutTitle">The lubeRVA Story</h1>
                     <h4 className="aboutTop">
@@ -29,8 +28,7 @@ class About extends Component {
                       visits to fixed oilchange locations. Your time is precious so TREAT YO
                       SELF to a lubeRVA oil change!
                     </h4>                   
-                </div>
-            </div>
+                </div>           
           </div>
         </div>
         <Contact />

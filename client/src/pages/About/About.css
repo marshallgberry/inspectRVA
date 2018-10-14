@@ -3,9 +3,6 @@
     width: 100%;
  }
  
- .card-body{
-     width:100%;
- }
 
  .aboutCard {
     background-image: url(../../assets/images/cargarage.jpg);
@@ -26,21 +23,21 @@
 }
 
 .aboutTop {
-    padding: 1%;
+    padding: 2%;
     font-size: 24px;
     color: white;
     width: 100%;
 }
 
 .aboutMiddle {
-    padding: 1%;
+    padding: 2%;
     font-size: 24px;
     color: white;
     width: 100%;
 }
 
 .aboutBottom {
-    padding: 1%;
+    padding: 2%;
     font-size: 24px;
     color: white;
     width: 100%;
@@ -48,6 +45,5 @@
 
 .aboutText {
     background-color: black;
-    opacity: 0.7;
-    height: 77vh;
+    opacity: 0.6;
 }

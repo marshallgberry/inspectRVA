@@ -1,24 +1,41 @@
 import React, { Component } from 'react';
 import Footer from '../../components/Footer.jsx';
 import Navbar from '../../components/Navbar.jsx';
-import Jumbotron from '../../components/Jumbotron.jsx';
+import Contact from '../../components/Contact.jsx'
+import './Services.css'
 
 
 class Services extends Component {
   render() {
     return (
       <div>
-        <Jumbotron title="lubeRVA" subtitle="mobile oil change" />
         <Navbar />
-        <div className="container">
-          <h2>Services</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc placerat orci eu nulla sagittis, pulvinar dignissim lectus consequat. Etiam in lobortis ligula, vitae ornare lacus. Vivamus scelerisque lorem arcu, vitae eleifend ex commodo a. Quisque rutrum, augue sit amet egestas efficitur, magna nulla lacinia elit, sed suscipit tortor erat vitae enim. Donec egestas odio id aliquet rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque mi dolor, egestas nec lacinia non, sodales eu lacus. Donec ultricies nec elit ac ornare. Quisque fermentum ligula ut feugiat cursus. Aliquam auctor suscipit ex a lacinia. Mauris sollicitudin, justo quis fringilla finibus, dui diam ullamcorper nulla, sit amet placerat justo neque quis quam. Praesent nec nibh at tortor ornare dignissim. Morbi tincidunt fringilla turpis at luctus. Vivamus dapibus ligula eget pellentesque luctus. Maecenas ut consectetur lacus, non dignissim nisi. Praesent sodales tellus sit amet faucibus tempus.
-          </p>
-          <p>
-            Maecenas dapibus, est posuere eleifend rutrum, lectus ligula gravida urna, at pretium dui turpis non lorem. Donec pretium lorem ipsum, at fermentum nibh consequat facilisis. Sed maximus massa est, vel porta diam placerat id. Vivamus imperdiet lorem eget dolor bibendum, eget gravida tellus interdum. Sed lectus odio, condimentum eu porttitor vel, euismod sit amet urna. Nam quis dui a nibh rhoncus aliquam vitae in metus. Nam sit amet semper turpis. Suspendisse eu malesuada tortor, vel lacinia nisl. Phasellus ultrices vehicula magna, sed tempor neque dapibus quis. Phasellus urna justo, sollicitudin ac odio eget, convallis varius nulla. Vivamus in lacinia lorem, at eleifend nulla. Nulla nec luctus purus. Integer id purus mauris. Phasellus finibus ultricies erat a tempus. Nulla luctus sem nec justo venenatis, eu faucibus purus congue.
-          </p>
-        </div>
+          <div className="container-fluid">
+            <div className="row">
+              <div className="col text-center serviceCard">
+                <h1>Personal</h1>
+                  <h4>Busy moms, over-scheduled dads—and working people of every kind—don’t 
+                    want to waste their time. Calling us for an on site oil change eliminates 
+                    your having to wait in line at some “quick-service” outlet. Somehow, that 
+                    “10 minute” promise on their sign gets stretched into an hour … or more.
+                  </h4>
+                  <button className="btn btn-danger btn-lg">Find Out More</button>
+              </div>
+              <div className="col text-center serviceCard">
+                <h1>Fleet</h1>
+                  <h4>Managing a fleet of vehicles is demanding enough even before you have to 
+                    deal with the headache of getting every vehicle’s oil changed.  Wasted manpower, 
+                    lost time, unpredictable costs—these are exactly the things that successful businesses 
+                    avoid by using lubeRVA! We come to you!
+                  </h4>
+                  <button className="btn btn-danger btn-lg">Find Out More</button>
+              </div>
+            </div>
+          </div>
+          <Contact />
+          <div data-spy="scroll" data-target="#serviceCard" data-offset="0">
+                <h1 id="list-item-1">Personal</h1>
+          </div>
         <Footer />
       </div>
     );
