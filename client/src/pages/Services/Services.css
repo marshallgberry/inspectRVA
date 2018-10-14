@@ -1,3 +1,60 @@
 .serviceCard {
     padding: 7%;
 }
+
+.personalImage {
+    background-image: url(../../assets/images/personalinfo.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.personalInfo {
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.personalInfo h1 {
+    padding-top: 1.8%;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.personalInfo h4 {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.personalInfo li {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.blendPrice {
+    padding: 1%;
+    font-weight: bold;
+}
+
+.blendPrice p {
+    font-size: 20px;
+}
+
+.blendPrice h3 {
+    font-weight: bold;
+}
+
+.syntheticPrice {
+    padding: 1%;
+}
+
+.syntheticPrice p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.syntheticPrice h3 {
+    font-weight: bold;
+}

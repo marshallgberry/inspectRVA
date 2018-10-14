@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
-import Home from './pages/Home/Home.jsx';
-import About from './pages/About/About.jsx';
-import Services from './pages/Services/Services.jsx';
-import Profile from './pages/Profile/Profile.jsx'
-import Login from './pages/Login/Login.jsx';
+import Home from './pages/Home/Home.js';
+import About from './pages/About/About.js';
+import Services from './pages/Services/Services.js';
+import Profile from './pages/Profile/Profile.js'
+import Login from './pages/Login/Login.js';
 
 class App extends Component {
   render() {
