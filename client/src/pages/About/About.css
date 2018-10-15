@@ -5,12 +5,13 @@
  
 
  .aboutCard {
-    background-image: url(../../assets/images/cargarage.jpg);
+    background-image: url(../../assets/images/aboutRVA.jpg);
     background-position: center;
-    background-size: 100%;
+    background-size: 105%;
     width: 80%;
     margin-left: 10%;
     border: 10px solid white;
+    padding: 2%;
 }
 
 .aboutTitle {
@@ -40,9 +41,4 @@
     font-size: 24px;
     color: white;
     width: 100%;
-}
-
-.aboutText {
-    background-color: black;
-    opacity: 0.6;
 }

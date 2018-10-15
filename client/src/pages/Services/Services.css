@@ -1,5 +1,45 @@
-.serviceCard {
-    padding: 7%;
+.personalCard {
+    padding: 4%;
+    background-image: url(../../assets/images/personalcard.jpg);
+    background-size: 200%;
+    background-position: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right:2%;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+}
+
+.personalCard h1 {
+    font-weight: bold;
+}
+
+.personalCard h4 {
+    padding: 3%;
+    font-weight: bold;
+}
+
+.fleetCard {
+    padding: 4%;
+    background-image: url(../../assets/images/fleetcard.jpg);
+    background-size: 175%;
+    background-position: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    margin-right:2%;
+    font-family: 'Catamaran', sans-serif;
+    color: white;
+}
+
+.fleetCard h1 {
+    font-weight: bold;
+}
+
+.fleetCard h4 {
+    padding: 3%;
+    font-weight: bold;
 }
 
 .personalImage {
@@ -57,4 +97,48 @@
 
 .syntheticPrice h3 {
     font-weight: bold;
+}
+
+
+.fleetImage {
+    background-image: url(../../assets/images/cargarage.jpg);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    margin-top: 10%;
+}
+
+.fleetInfo {
+    color: white;
+    font-family: 'Catamaran', sans-serif;
+}
+
+.fleetInfo h1 {
+    padding-top: 1.8%;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.fleetInfo h1 {
+    padding-top: 1.8%;
+    font-size: 60px;
+    font-weight: 900;
+}
+
+.fleetInfo h4 {
+    font-size: 38px;
+    font-weight: bold;
+    padding: 2%;
+}
+
+.fleetInfo li {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.fleetPrice {
+    padding: 2%;
+    font-weight: bold;
+    font-size: 25px;
 }

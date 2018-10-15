@@ -14,7 +14,7 @@ class Services extends Component {
         <Navbar />
           <div className="container-fluid">
             <div className="row">
-              <div className="col text-center serviceCard">
+              <div className="col text-center personalCard">
                 <h1>Personal</h1>
                   <h4>Busy moms, over-scheduled dads—and working people of every kind—don’t 
                     want to waste their time. Calling us for an on site oil change eliminates 
@@ -25,7 +25,7 @@ class Services extends Component {
                   <button className="btn btn-danger btn-lg">Find Out More</button>
                   </a>
               </div>
-              <div className="col text-center serviceCard">
+              <div className="col text-center fleetCard">
                 <h1>Fleet</h1>
                   <h4>Managing a fleet of vehicles is demanding enough even before you have to 
                     deal with the headache of getting every vehicle’s oil changed.  Wasted manpower, 
@@ -70,15 +70,38 @@ class Services extends Component {
                 </div>
               </div>
             </div>
-          </div>  
-            <div>
+          </div >  
+          <div className="container fleetImage">
+            <div className="fleetInfo container-fluid">
               <ScrollableAnchor id={"infoFleet"}>
-                <h1>Personal Oil Changes Performed at Your Location!</h1>
+                <h1 className="infoTop text-center">Our On-Site Mobile Fleet Services Keep You Rolling!</h1>
               </ScrollableAnchor>
               <div>
-                Sweet
+                <h4 className="text-center">Included With Every Fleet Oil Change Service:</h4>
+                <ul className="list">
+                  <li>Change oil with Synthetic Blend Oil (Full Synthetic available)</li>
+                  <li>Install new, Top Quality Oil Filter</li>
+                  <li>Lube chassis as required</li>
+                  <li>Antifreeze / Coolant Fluid, fill as needed</li>
+                  <li>Brake Fluid – fill as needed</li>
+                  <li>Power Steering Fluid – fill as needed</li>
+                  <li>Windshield Washer Fluid – Fill as needed</li>
+                  <li>Transmission Fluid – Fill as needed up to 1 pint</li>
+                  <li>Check tire pressure, add air as necessary, advise customer (tire rotations are available)</li>
+                  <li>Check Air Filter – advise customer (replace if requested)</li>
+                  <li>Check Wiper Blades (replace if requested) – advise customer</li>
+                  <li>Check all exterior lights, advise customer (replace if requested)</li>
+                </ul>
+                <div className="text-center">
+                  <div className="col fleetPrice">
+                    <p>On-Site Fleet Services, with little or no down-time for your employees or vehicles, start at $46.50.</p>
+                    <p>Contact us today for exact pricing for your fleet.</p>
+                    <button className="btn btn-danger btn-lg">Request Quote</button>
+                  </div>
+                </div>
               </div>
             </div>
+          </div >  
           
         <Footer />
       </div>
