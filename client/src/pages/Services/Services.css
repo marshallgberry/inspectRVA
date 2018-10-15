@@ -142,3 +142,7 @@
     font-weight: bold;
     font-size: 25px;
 }
+
+.form-group {
+    width: 100%;
+}

@@ -1,14 +1,32 @@
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import Footer from '../../components/Footer.js';
 import Navbar from '../../components/Navbar.js';
 import Contact from '../../components/Contact.js'
 import './Services.css'
 import ScrollableAnchor from 'react-scrollable-anchor'
+import Modal from 'react-responsive-modal';
+
 
 
 
 class Services extends Component {
+
+  state = {
+    open: false,
+  };
+  
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+  
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
+  
+
   render() {
+    const { open } = this.state;
     return (
       <div>
         <Navbar />
@@ -96,7 +114,44 @@ class Services extends Component {
                   <div className="col fleetPrice">
                     <p>On-Site Fleet Services, with little or no down-time for your employees or vehicles, start at $46.50.</p>
                     <p>Contact us today for exact pricing for your fleet.</p>
-                    <button className="btn btn-danger btn-lg">Request Quote</button>
+                    <button className="btn btn-danger btn-lg" onClick={this.onOpenModal}>Request Quote</button>
+                    <Modal open={open} onClose={this.onCloseModal} center>
+                      <form>
+                        <div className="form-group">
+                          <label for="Email">Email Address:</label>
+                          <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" />
+                        </div>
+                        <div className="form-group">
+                          <label for="Company">Company Name:</label>
+                          <input type="text" className="form-control" id="Company"/>
+                        </div>
+                        <div className="form-group">
+                          <label for="Phone">Phone:</label>
+                          <input type="text" className="form-control" id="Phone"/>
+                        </div>
+                        <div className="form-group">
+                          <label for="Address">Service Address:</label>
+                          <small id="serviceAddress" class="form-text text-muted">Please enter the address the vehicle will be at for service.</small>
+                          <input type="text" className="form-control" id="Address"/>
+                        </div>
+                        <div className="form-group">
+                          <label for="Number">Number of Vehicles:</label>
+                          <select className="form-control" id="Number">
+                            <option>2-5</option>
+                            <option>6-10</option>
+                            <option>11-15</option>
+                            <option>16-20</option>
+                            <option>21-25</option>
+                            <option>26 or more</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="Make">Year, Make and Model of vehicle, and any special requests:</label>
+                          <textarea class="form-control" id="Make" rows="3"></textarea>
+                        </div>
+                        <button type="submit" className="btn btn-primary">Submit</button>
+                      </form>
+                    </Modal>
                   </div>
                 </div>
               </div>
@@ -108,5 +163,6 @@ class Services extends Component {
     );
   }
 }
+
 
 export default Services
