@@ -7,8 +7,21 @@ class Jumbotron extends Component {
     
       <div className="jumbotron jumbotron-fluid">
         <div className="container">   
-          <h1 className="display-3">{this.props.title}</h1>
-          <p className="lead">{this.props.subtitle}</p>
+            <div className="row">
+              <div className="col">
+                <h1 className="display-3">{this.props.title}</h1>
+                <p className="lead">{this.props.subtitle}</p>
+              </div>
+              <div className="col"> 
+                <button>
+                  <a href="/login">Login</a>
+                </button>
+                <button>
+                  <a href="/logout">Logout</a>
+                </button>
+              </div>
+            </div>
+          
         </div>        
       </div>
     

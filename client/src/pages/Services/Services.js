@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import Footer from '../../components/Footer.js';
 import Navbar from '../../components/Navbar.js';
 import Contact from '../../components/Contact.js'
