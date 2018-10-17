@@ -35,11 +35,7 @@
     "cors": "^2.8.4",
     "dotenv": "^6.1.0",
     "express": "^4.16.3",
-    "express-form-data": "^2.0.6",
-    "express-jwt": "^5.3.1",
     "if-env": "^1.0.4",
-    "jsonwebtoken": "^8.3.0",
-    "mongoose": "^5.3.4",
-    "passport": "^0.4.0"
+    "mongoose": "^5.3.4"
   }
 }
