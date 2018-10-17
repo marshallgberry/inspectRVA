@@ -41,9 +41,26 @@ class Jumbotron extends Component {
               <div className="col"> 
                 <a className="btn btnLogin" onClick={this.onOpenModal}>Login</a>
                 <Modal open={open2} onClose={this.onCloseModal} center>
+                <form>
+                   <h1>Login</h1>
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email" />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" />
+                  </div>
+                  <button type="submit" class="btn btnSubmit">Submit</button>
+                </form>
                 </Modal>
                 <a className="btn btnLogout" onClick={this.onOpenAlert}>Logout</a>
-                <Modal open={open} onClose={this.onCloseAlert} center>You are logged out as: marshallgberry@gmail.com</Modal>   
+                <Modal open={open} onClose={this.onCloseAlert} center>
+                  <form>
+                  <h1>You are logged out as: marshallgberry@gmail.com</h1>
+                  <button type="submit" class="btn btnSweet">Sweet!</button>
+                  </form>
+                </Modal>   
               </div>
             </div>
           

@@ -9,6 +9,13 @@
     margin-right:2%;
     font-family: 'Catamaran', sans-serif;
     color: white;
+    border-radius: 25px;
+    border-style: unset;
+    box-shadow: -0px 15px 20px rgba(0, 0, 0, 0.9); 
+}
+
+.topBody {
+    background-image: linear-gradient( white, #abd0d6);
 }
 
 .personalCard h1 {
@@ -31,6 +38,9 @@
     margin-right:2%;
     font-family: 'Catamaran', sans-serif;
     color: white;
+    border-radius: 25px;
+    border-style: unset;
+    box-shadow: -0px 15px 20px rgba(0, 0, 0, 0.9); 
 }
 
 .fleetCard h1 {
@@ -48,6 +58,7 @@
     background-position: center;
     width: 100%;
     margin-top: 10%;
+    border-radius: 25px;
 }
 
 .personalInfo {
@@ -106,6 +117,7 @@
     background-position: center;
     width: 100%;
     margin-top: 10%;
+    border-radius: 25px 25px 0px 0px;
 }
 
 .fleetInfo {

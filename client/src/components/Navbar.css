@@ -8,7 +8,8 @@
   .navbar {
     background:#abd0d6;
     width: 100%;
-    overflow: auto;
+    overflow: auto;   
+    background-image: linear-gradient(#abd0d6, white); /* Standard syntax (must be last) */
   }
 
  

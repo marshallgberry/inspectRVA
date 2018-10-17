@@ -8,28 +8,28 @@ import Modal from 'react-responsive-modal';
 class Book extends Component {
 
   state = {
-    open: false,
+    open3: false,
 
   };
   
   onOpenModal = () => {
-    this.setState({ open: true });
+    this.setState({ open3: true });
   };
   
   onCloseModal = () => {
-    this.setState({ open: false });
+    this.setState({ open3: false });
   };
 
 
   render() {
-    const { open } = this.state;
+    const { open3 } = this.state;
 
     return (
       <div>
         <Navbar />
-        <div className="container container-fluid">
+        <div className="container container-fluid ">
           <h1 className="bookHeader">Book Appointment</h1>
-          <form className="bookForm" action="/book" method="post">
+          <form className="bookForm" action="/book">
           <div className="form-group">
               <label for="Company">Full Name:</label>
               <input type="text" className="form-control" id="Name" name="name"/>
@@ -94,8 +94,13 @@ class Book extends Component {
               <label for="Make">Year, Make and Model of vehicle, and any special requests:</label>
               <textarea class="form-control" id="Make" rows="3"></textarea>
             </div>
-            <button className="btn btn-primary" onClick={this.onOpenModal}>Request</button>
-            <Modal open={open} onClose={this.onCloseModal} center><h1 className="requestAlert">Booking Requested!</h1></Modal>
+            <a className="btn btnRequest" onClick={this.onOpenModal}>Request</a>
+            <Modal open={open3} onClose={this.onCloseAlert} center>
+                  <form>
+                  <h1>Booking Requested!</h1>
+                  <button type="submit" class="btn btnSweet">Sweet!</button>
+                  </form>
+            </Modal>
           </form>         
         </div>
         <Contact />

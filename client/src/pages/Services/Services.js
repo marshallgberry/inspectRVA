@@ -39,7 +39,7 @@ class Services extends Component {
     return (
       <div>
         <Navbar />
-          <div className="container-fluid">
+          <div className="container-fluid topBody">
             <div className="row">
               <div className="col text-center personalCard">
                 <h1>Personal</h1>
@@ -125,7 +125,7 @@ class Services extends Component {
                     <p>Contact us today for exact pricing for your fleet.</p>
                     <button className="btn btn-danger btn-lg" onClick={this.onOpenModal}>Request Quote</button>
                     <Modal open={open} onClose={this.onCloseModal} center>
-                      <form action="/services" method="post">
+                      <form action="/services">
                         <div className="form-group">
                           <label for="Email">Email Address:</label>
                           <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -158,8 +158,13 @@ class Services extends Component {
                           <label for="Make">Year, Make and Model of vehicle, and any special requests:</label>
                           <textarea class="form-control" id="Make" rows="3"></textarea>
                         </div>
-                        <button className="btn btn-primary" onClick={this.onOpenAlert}>Submit</button> 
-                        <Modal open={open2} onClose={this.onCloseAlert} center><h1 className="requestAlert">Request Submitted!</h1></Modal>
+                        <a className="btn btnSubmit" onClick={this.onOpenAlert}>Submit</a> 
+                        <Modal open={open2} onClose={this.onCloseAlert} center>
+                          <form>
+                            <h1>Request Submitted!</h1>
+                            <button type="submit" class="btn btnSweet">Sweet!</button>
+                          </form>
+                        </Modal>
                       </form>
                     </Modal>
                   </div>
