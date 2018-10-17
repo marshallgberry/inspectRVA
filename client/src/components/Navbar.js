@@ -20,7 +20,7 @@ class Navbar extends Component {
               <Link className="nav-link serviceIcon" data-toggle="popover" title="Services" to="/services"></Link>
             </div>
             <div className="col ">
-              <Link className="nav-link profileIcon " data-toggle="popover" title="Sign In to View Profile" to="/profile"></Link>
+              <Link className="nav-link bookIcon " data-toggle="popover" title="Book an Oil Change Now!" to="/book"></Link>
             </div>
           </div>
         </div>

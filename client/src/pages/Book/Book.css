@@ -1,0 +1,18 @@
+.bookHeader {
+    text-align: center;
+    padding-top: 5%;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 75px;
+    font-weight: 600;
+}
+
+.bookForm {
+    padding: 5%;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.form-check {
+    margin-left: 20px;
+}
