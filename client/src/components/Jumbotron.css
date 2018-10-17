@@ -11,14 +11,16 @@
 
   .lead {
      font-size: 32px;
-     font-weight: 350;
-     margin-left: 8%;
+     font-weight: 600;
+     margin-left: 18%;
+     font-family: 'Catamaran', sans-serif;
   }
 
   .display-3 {
       font-size: 100px;
       font-weight: 600;
-      margin-left: -4%
+      margin-left: 0%;
+      font-family: 'Catamaran', sans-serif;
   }
 
 .btnLogout {

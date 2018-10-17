@@ -20,6 +20,8 @@
     font-size: 75px;
     color: white;
     width: 100%;
+    font-weight: 600;
+    font-family: 'Catamaran', sans-serif;
 }
 
 .aboutTop {
@@ -27,6 +29,8 @@
     font-size: 24px;
     color: white;
     width: 100%;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
 }
 
 .aboutMiddle {
@@ -34,6 +38,8 @@
     font-size: 24px;
     color: white;
     width: 100%;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
 }
 
 .aboutBottom {
@@ -41,4 +47,6 @@
     font-size: 24px;
     color: white;
     width: 100%;
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 600;
 }
