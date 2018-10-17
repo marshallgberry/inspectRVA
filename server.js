@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const path = require('path');
 const PORT = process.env.PORT || 3001;
-const user = require('./routes/api/user');
+const booking = require('./routes/api/booking');
 
 const app = express();
 
@@ -13,15 +13,16 @@ app.use(bodyParser.json());
 
 // Database
 mongoose.set("useCreateIndex", true);
+mongoose.set("useNewUrlParser", true);
 
 mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost:27017/lubeRVA", 
-  (err) => err ? 
+  (err) => err ?
       console.log(`Sorry, could not connect to the database.`) : 
       console.log(`Connected to database!`));
 
 // use routes
-app.use('/api/user', user);
+app.use('/api/booking', booking);
 
 
 if (process.env.NODE_ENV !== "production") {

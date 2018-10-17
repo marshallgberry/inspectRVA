@@ -13,6 +13,7 @@ class Services extends Component {
 
   state = {
     open: false,
+    open2: false,
   };
   
   onOpenModal = () => {
@@ -22,10 +23,19 @@ class Services extends Component {
   onCloseModal = () => {
     this.setState({ open: false });
   };
+
+  onOpenAlert = () => {
+    this.setState({ open2: true });
+  };
   
+  onCloseAlert = () => {
+    this.setState({ open2: false });
+  };
+
 
   render() {
     const { open } = this.state;
+    const { open2 } = this.state;
     return (
       <div>
         <Navbar />
@@ -115,7 +125,7 @@ class Services extends Component {
                     <p>Contact us today for exact pricing for your fleet.</p>
                     <button className="btn btn-danger btn-lg" onClick={this.onOpenModal}>Request Quote</button>
                     <Modal open={open} onClose={this.onCloseModal} center>
-                      <form>
+                      <form action="/services" method="post">
                         <div className="form-group">
                           <label for="Email">Email Address:</label>
                           <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email" />
@@ -148,7 +158,8 @@ class Services extends Component {
                           <label for="Make">Year, Make and Model of vehicle, and any special requests:</label>
                           <textarea class="form-control" id="Make" rows="3"></textarea>
                         </div>
-                        <button type="submit" className="btn btn-primary">Submit</button>
+                        <button className="btn btn-primary" onClick={this.onOpenAlert}>Submit</button> 
+                        <Modal open={open2} onClose={this.onCloseAlert} center><h1 className="requestAlert">Request Submitted!</h1></Modal>
                       </form>
                     </Modal>
                   </div>
@@ -156,8 +167,7 @@ class Services extends Component {
               </div>
             </div>
           </div >  
-          
-        <Footer />
+        <Footer /> 
       </div>
     );
   }

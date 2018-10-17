@@ -1,8 +1,15 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const UserSchema = new Schema(
+const BookingSchema = new Schema(
   {
+    name: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+      lowercase: true
+    },
     email: {
       type: String,
       required: true,
@@ -10,11 +17,7 @@ const UserSchema = new Schema(
       trim: true,
       lowercase: true
     },
-    password: { type: String, required: true },
-    createdAt: {
-      type: Date,
-      required: false
-    },
+    
     updatedAt: {
       type: Number,
       required: false
@@ -23,6 +26,6 @@ const UserSchema = new Schema(
   { runSettersOnQuery: true }
 );
 
-const User = mongoose.model("User", UserSchema);
+const Booking = mongoose.model("Booking", BookingSchema);
 
-module.exports = User;
+module.exports = Booking;

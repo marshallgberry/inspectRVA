@@ -3,26 +3,44 @@ import Footer from '../../components/Footer.js';
 import Navbar from '../../components/Navbar.js';
 import Contact from '../../components/Contact.js'
 import './Book.css'
+import Modal from 'react-responsive-modal';
 
 class Book extends Component {
+
+  state = {
+    open: false,
+
+  };
+  
+  onOpenModal = () => {
+    this.setState({ open: true });
+  };
+  
+  onCloseModal = () => {
+    this.setState({ open: false });
+  };
+
+
   render() {
+    const { open } = this.state;
+
     return (
       <div>
         <Navbar />
         <div className="container container-fluid">
           <h1 className="bookHeader">Book Appointment</h1>
-          <form className="bookForm">
+          <form className="bookForm" action="/book" method="post">
           <div className="form-group">
               <label for="Company">Full Name:</label>
-              <input type="text" className="form-control" id="Name"/>
+              <input type="text" className="form-control" id="Name" name="name"/>
             </div>
             <div className="form-group">
               <label for="Email">Email:</label>
-              <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="" />
+              <input type="email" className="form-control" id="Email" aria-describedby="emailHelp" placeholder="" name="email"/>
             </div>
             <div className="form-group">
               <label for="Company">Phone:</label>
-              <input type="text" className="form-control" id="Phone"/>
+              <input type="text" className="form-control" id="Phone" name="phone"/>
             </div>
             <div className="form-group">
               <label for="Call">Best Time To Call:</label>
@@ -76,7 +94,8 @@ class Book extends Component {
               <label for="Make">Year, Make and Model of vehicle, and any special requests:</label>
               <textarea class="form-control" id="Make" rows="3"></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">Submit</button>
+            <button className="btn btn-primary" onClick={this.onOpenModal}>Request</button>
+            <Modal open={open} onClose={this.onCloseModal} center><h1 className="requestAlert">Booking Requested!</h1></Modal>
           </form>         
         </div>
         <Contact />
